@@ -1,3 +1,4 @@
+import LogoComponent from '@/components/ui/LogoComponent';
 import { useAuth } from '@/contexts/AuthContext';
 import { Ionicons } from '@expo/vector-icons';
 import React, { useState } from 'react';
@@ -71,10 +72,7 @@ export default function LoginScreen() {
         <ScrollView contentContainerStyle={styles.scrollContainer}>
           {/* Header */}
           <View style={styles.header}>
-            <View style={styles.logoContainer}>
-              <Ionicons name="receipt" size={60} color="#2563EB" />
-            </View>
-            <Text style={styles.title}>ReciBox</Text>
+            <LogoComponent width={200} height={200} />
             <Text style={styles.subtitle}>
               Gerencie seus gastos e gere relatórios profissionais
             </Text>

@@ -101,6 +101,7 @@ export default function DashboardScreen() {
         p_data_fim: format(fimMes, 'yyyy-MM-dd'),
       });
 
+      console.log('PROJETOS:', projetos);
       setData({
         totalMesAtual: gastosMes?.reduce((sum, gasto) => sum + Number(gasto.valor), 0) || 0,
         totalGeral: gastosGeral?.reduce((sum, gasto) => sum + Number(gasto.valor), 0) || 0,
